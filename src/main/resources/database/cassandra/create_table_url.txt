@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS tinyurl.url (
+    hash varchar,
+    creation_date date,
+    expiration_date date,
+    original_url varchar,
+    user_id uuid,
+    PRIMARY KEY(hash)
+);
